@@ -5,7 +5,6 @@ import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.alextsy.marvelcharacters.R
 import com.alextsy.marvelcharacters.data.models.Result
 import com.alextsy.marvelcharacters.databinding.ItemCharacterBinding
 import com.bumptech.glide.Glide

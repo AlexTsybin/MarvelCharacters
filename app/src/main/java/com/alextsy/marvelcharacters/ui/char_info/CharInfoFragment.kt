@@ -34,7 +34,7 @@ class CharInfoFragment : Fragment(R.layout.fragment_char_info) {
 
             Glide.with(this@CharInfoFragment)
                 .load("${charInfo.thumbnail.path}/standard_xlarge.${charInfo.thumbnail.extension}")
-                .listener(object : RequestListener<Drawable>{
+                .listener(object : RequestListener<Drawable> {
                     override fun onLoadFailed(
                         e: GlideException?,
                         model: Any?,

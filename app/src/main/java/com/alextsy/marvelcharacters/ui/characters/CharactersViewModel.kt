@@ -17,7 +17,8 @@ class CharactersViewModel @ViewModelInject constructor(
     private val currentQuery = state.getLiveData(CURRENT_QUERY, DEFAULT_QUERY)
 
     val characters = currentQuery.switchMap { queryString ->
-        repository.getCharactersResult(if (queryString.isEmpty()) null else queryString).cachedIn(viewModelScope)
+        repository.getCharactersResult(if (queryString.isEmpty()) null else queryString)
+            .cachedIn(viewModelScope)
     }
 
     fun searchHeroes(query: String?) {

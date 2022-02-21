@@ -12,7 +12,11 @@ class CharactersLoadStateAdapter(private val retry: () -> Unit) :
     LoadStateAdapter<CharactersLoadStateAdapter.LoadStateViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, loadState: LoadState): LoadStateViewHolder {
-        val binding = CharactersLoadProgressBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = CharactersLoadProgressBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
 
         return LoadStateViewHolder(binding)
     }
@@ -29,7 +33,7 @@ class CharactersLoadStateAdapter(private val retry: () -> Unit) :
             }
         }
 
-        fun bind(loadState: LoadState){
+        fun bind(loadState: LoadState) {
             binding.apply {
                 progressBar.isVisible = loadState is LoadState.Loading
                 textViewRetry.isVisible = loadState !is LoadState.Loading

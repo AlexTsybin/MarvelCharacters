@@ -30,8 +30,6 @@ class MarvelPagingSource(
 
             LoadResult.Page(
                 data = characters,
-//                nextKey = if (characters.isEmpty()) null else characters.last().id,
-//                prevKey = if (page == MARVEL_STARTING_PAGE_INDEX) null else page - 10
                 nextKey = if (characters.size < page) null else page + 1,
                 prevKey = if (page == 1) null else page - 1
             )
