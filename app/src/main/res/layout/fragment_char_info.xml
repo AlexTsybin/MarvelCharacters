@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_info_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/tv_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_info_image"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            tools:text="Black Widow" />
+
+        <TextView
+            android:id="@+id/tv_details_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_name"
+            android:layout_margin="@dimen/default_margin"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/link_text_color"
+            android:textSize="16sp"
+            android:visibility="gone"
+            tools:text="link kjh jkh jkh jkhjk hjh jh  khkjh jkhj hjk jh jkjk  hjh hl h  llk jl h jhghjghjghg"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_info_descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_details_url"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            tools:text="Black Widow" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPrimary" />
+    </RelativeLayout>
+
+</ScrollView>

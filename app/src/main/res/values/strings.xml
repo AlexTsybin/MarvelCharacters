@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MarvelCharacters</string>
+
+    <string name="no_results_got">No results got</string>
+    <string name="characters_couldn_t_be_loaded">Characters couldn\'t be loaded</string>
+    <string name="retry">RETRY</string>
+</resources>
