@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MarvelCharacters</string>
+    <string name="app_name">Marvel Characters</string>
 
     <string name="no_results_got">No results got</string>
     <string name="characters_couldn_t_be_loaded">Characters couldn\'t be loaded</string>
